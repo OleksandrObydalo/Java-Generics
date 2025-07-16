@@ -1,12 +1,23 @@
 package generic_class;
 
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main{
     public static void main(String[] args) {
-    Pair1<String, Integer> pair = new Pair1<>("John", 25);
-    String name = pair.first;
-    Integer age = pair.second;
-    System.out.println(name + " is " + age + " years old.");
+        List<String> list1 = new ArrayList<>();
+        list1.add("This");
+        list1.add("is");
+        list1.add("Sparta!");
+        for(String word: list1){
+            System.out.print(word + " ");
+        }
+
+        Pair1<String, Integer> pair = new Pair1<>("John", 25);
+        String name = pair.first;
+        Integer age = pair.second;
+        System.out.println(name + " is " + age + " years old.");
     }
 
     public static <T> void swap(T[] array, int i, int j) {

@@ -10,7 +10,7 @@ public class Wrapper {
         i = new Integer(10);
         number = i.intValue();
 
-        //Autoboxing
+        //Autoboxing Помилки менш йомвірні при автоматичному пакуванні
         number = 10;
         i = number;
 
@@ -18,7 +18,10 @@ public class Wrapper {
         i = new Integer(10);
         number = i;
 
-
+//        Creates error
+//        i = null;
+//        int j = i + 5;
+//        System.out.println(j);
 
     }
 }

@@ -1,4 +1,4 @@
-package generic_class;
+package generic;
 
 public class Pair1<T1, T2> {
 
